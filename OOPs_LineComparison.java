@@ -9,8 +9,9 @@ public class OOPs_LineComparison {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison Computation Program");
 
-		System.out.print("Enter End point of Line1:");
+		System.out.println("Enter End point of Line1:");
 		line1 = lengthCal();
+		System.out.println("Enter End point of Line2:");
 		line2 = lengthCal();
 		checkEqual(line2, line1);
 	}
@@ -25,7 +26,6 @@ public class OOPs_LineComparison {
 		int x2 = sc.nextInt();
 		System.out.println("Enter Point2's y=");
 		int y2 = sc.nextInt();
-		sc.close();
 		Double Length = Math.sqrt(((x2 - x1) ^ 2) + ((y2 - y1) ^ 2));
 
 		return Length;
