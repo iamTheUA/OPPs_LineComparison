@@ -34,8 +34,16 @@ public class OOPs_LineComparison {
 	private static void checkEqual(double l1, double l2) {
 		if (l1 == l2) {
 			System.out.println("Lines are Equal");
-		} else
+		} else {
 			System.out.println("Lines are not Equal");
+			compareTo(l1, l2);
+		}
 	}
 
+	private static void compareTo(double l1, double l2) {
+		if (l1 > l2) {
+			System.out.println("Line1 is Greater");
+		} else
+			System.out.println("Line2 is Greater");
+	}
 }
